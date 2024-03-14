@@ -16,7 +16,7 @@ function Home() {
     const [reviews, setReviews] = useState([]);
 
     useEffect(() => {
-        axios.get("http://wvulqmhjj9tbtc1w.cbetxkdyhwsb.us-east-1.rds.amazonaws.com").then((result) => {
+        axios.get("https://walkerjohnsonbrewing-server-fd63de77b2c7.herokuapp.com/").then((result) => {
             console.log(result);
             setReviews(result.data);
         });
