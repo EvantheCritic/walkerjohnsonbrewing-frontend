@@ -16,7 +16,7 @@ function Home() {
     const [reviews, setReviews] = useState([]);
 
     useEffect(() => {
-        axios.get("http://localhost:2999").then((result) => {
+        axios.get("http://wvulqmhjj9tbtc1w.cbetxkdyhwsb.us-east-1.rds.amazonaws.com").then((result) => {
             console.log(result);
             setReviews(result.data);
         });
