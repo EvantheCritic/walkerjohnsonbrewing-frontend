@@ -4,6 +4,10 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Beer from './pages/Beer';
 import Food from './pages/Food';
+import Catering from './pages/Catering';
+import CateringOption1 from './pages/CateringOption1';
+import CateringOption2 from './pages/CateringOption2';
+import CateringOption3 from './pages/CateringOption3';
 import WriteReview from './pages/WriteReview';
 
 function App() {
@@ -43,6 +47,10 @@ function App() {
           <Route path="/" element=<Home /> />
           <Route path="/Beer" element=<Beer /> />
           <Route path="/Food" element=<Food /> />
+          <Route path="/Catering" element=<Catering /> />
+          <Route path="/CateringOption1" element=<CateringOption1 /> />
+          <Route path="/CateringOption2" element=<CateringOption2/> />
+          <Route path="/CateringOption3" element=<CateringOption3/> />
           <Route path="/WriteReview" element=<WriteReview /> />
         </Routes>
       </Router>

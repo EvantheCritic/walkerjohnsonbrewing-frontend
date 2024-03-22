@@ -17,29 +17,14 @@ function WriteReview() {
     e.preventDefault();
     console.log("Post review called");
     try {
-      // Make a POST request to your backend API endpoint
       const $axios = await axios.post("http://localhost:2999/WriteReview", formData);
+      // Make a POST request to your backend API endpoint
+      
       window.location.href = '/';
       console.log('Review submitted successfully:', $axios.data);
       // Handle success or update your component state as needed
     } catch (error) {
-      console.error('Error submitting review:', error);
-    
-      if (error.response) {
-        // The request was made and the server responded with a status code
-        // that falls out of the range of 2xx
-        console.error('Response data:', error.response.data);
-        console.error('Response status:', error.response.status);
-        console.error('Response headers:', error.response.headers);
-      } else if (error.request) {
-        // The request was made but no response was received
-        console.error('No response received. Request details:', error.request);
-      } else {
-        // Something happened in setting up the request that triggered an Error
-        console.error('Error details:', error.message);
-      }
-    
-      // Handle errors or update your component state accordingly
+      console.error('Error submitting review:', error);  
     }
   };
 
