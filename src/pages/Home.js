@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { useEffect, useState, useContext } from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 function mapReviews(value) {
@@ -15,6 +15,7 @@ function mapReviews(value) {
 function Home() {
     const [reviews, setReviews] = useState([]);
 
+    //https://walkerjohnsonbrewing-server-fd63de77b2c7.herokuapp.com/
     useEffect(() => {
         axios.get("https://walkerjohnsonbrewing-server-fd63de77b2c7.herokuapp.com/").then((result) => {
             console.log(result);
@@ -26,7 +27,7 @@ function Home() {
             <div id="home-hero">
                 <p>Come visit our restaurant and brewery for a yee-haw time!</p>
             </div>
-            <p className="alert">Note: Jobs page is not available yet</p>
+            <p className="alert">Note: Jobs page is not completed yet</p>
             <nav>
                 <Link to="/Beer" style={{ textDecoration: 'none' }}>
                 <div className="nav-pill">

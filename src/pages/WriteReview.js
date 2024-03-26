@@ -17,7 +17,7 @@ function WriteReview() {
     e.preventDefault();
     console.log("Post review called");
     try {
-      const $axios = await axios.post("https://walkerjohnsonbrewing-server-fd63de77b2c7.herokuapp.com/WriteReview", formData);
+      const $axios = await axios.post("http://localhost:2999/WriteReview", formData);
       // Make a POST request to your backend API endpoint
       
       window.location.href = '/';

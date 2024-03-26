@@ -24,7 +24,7 @@ nav {
   margin: 8px;
   display: flex;
   justify-content: space-around;
-  background-image: url('../public/bg.jpg');
+  background-image: url('../public/bg2.jpg');
   padding: 10px;
   flex-wrap: wrap; /* Allow flex items to wrap onto multiple lines */
 }
@@ -96,7 +96,7 @@ header.App-header {
   display: block;
   padding: 10px;
   text-decoration: none;
-  color: #ffc672;
+  color: #69512f;
   font-size: 1.2rem;
   transition: background-color 0.3s ease-in-out;
 }
@@ -122,9 +122,10 @@ header.App-header {
 }
 
 .logo-container {
+  background-image: url('../public/bg.jpg');
   flex-grow: 1;
   position: relative;
-  height: 130px; /* Set the height of the logo-container */
+  height: 190px; /* Set the height of the logo-container */
 }
 
 .logo-container img {
@@ -198,6 +199,58 @@ header.App-header {
 
 .form-group {
   margin-bottom: 20px;
+}
+
+.job-section {
+  padding: 20px;
+  display: grid;
+  gap: 20px;
+}
+
+.job-section h3 {
+  font-size: 2em;
+  color: #f0d2b6; 
+  border-bottom: 2px solid #f0d2b6; 
+  width: 100%; 
+}
+
+.job-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 20px;
+}
+
+.emp-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 20px;
+}
+
+.job-card {
+  max-width: 400px; /* Set width to 400px */
+  background-color: #f0d2b6;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.employee {
+  max-width: 400px; 
+  margin: auto;
+  background-image: url('../public/bg2.jpg');
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.job-property, .emp-property {
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 1.6rem;
+}
+
+.emp-property {
+  text-align: left;
 }
 
 label {
@@ -302,6 +355,27 @@ input[type="submit"]:hover {
 }
 
 #food-hero p {
+  background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
+  font-size: 2.7rem;
+  color: #ffffff; /* White text color */
+  padding: 80px; /* Adjust padding as needed */
+  text-align: left;
+  border-radius: 10px; /* Add rounded corners */
+  max-width: 40%; /* Limit the width of the transparent box */
+}
+
+#job-hero {
+  background-image: url('../public/kegs.jpg'); /* Replace with the path to your background image */
+  background-size: cover;
+  background-position: center center;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#job-hero p {
   background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
   font-size: 2.7rem;
   color: #ffffff; /* White text color */
@@ -464,6 +538,22 @@ input[type="submit"]:hover {
   }
 }
 
+@media (max-width: 920px) {
+  .emp-grid, .job-grid {
+    display: block;
+  }
+
+  .job-card {
+    margin: auto;
+  }
+
+  .employee, .job-card {
+    max-width: none;
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}
+
 @media (max-width: 900px) {
   .menu-beer {
     width: 65%; /* Adjust width for a single column on smaller screens */
@@ -486,6 +576,10 @@ input[type="submit"]:hover {
   #home-hero p {
     font-size: 2.1rem;
     padding: 30px;
+  }
+
+  .logo-container {
+    height: 130px;
   }
   
   .menu-icon {

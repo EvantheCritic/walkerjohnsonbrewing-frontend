@@ -9,6 +9,7 @@ import CateringOption1 from './pages/CateringOption1';
 import CateringOption2 from './pages/CateringOption2';
 import CateringOption3 from './pages/CateringOption3';
 import WriteReview from './pages/WriteReview';
+import Jobs from './pages/Jobs';
 
 function App() {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -51,6 +52,7 @@ function App() {
           <Route path="/CateringOption1" element=<CateringOption1 /> />
           <Route path="/CateringOption2" element=<CateringOption2/> />
           <Route path="/CateringOption3" element=<CateringOption3/> />
+          <Route path="/Jobs" element=<Jobs/> />
           <Route path="/WriteReview" element=<WriteReview /> />
         </Routes>
       </Router>
