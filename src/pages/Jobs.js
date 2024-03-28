@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function mapJobs1(job) {
     return (
@@ -53,7 +54,7 @@ function mapEmployees(emp) {
             <div class="emp-property">Job: { emp.job_title }</div>
             <div class="emp-property">Years of experience: { emp.experience }</div>
             <div class="emp-property">Number of completed jobs: { emp.jobs_completed }</div>
-            <div class="emp-property">Pay: ${ emp.pay }</div>
+            <div class="emp-property">Pay: ${ emp.pay }</div>            
         </div>
     );
 }
@@ -99,7 +100,7 @@ function Jobs() {
     return(
         <div className="Jobs">
             <div id="job-hero">
-                <p>Assign Catering jobs to 4 of our amazing employees!</p>
+                <p>Our amazing employees and a list of jobs that are in the process of being completed.</p>
             </div>
             <div className="menu-section">
                 <h2 className="menu-header">Employees</h2>
@@ -108,6 +109,11 @@ function Jobs() {
                     {employees.map(mapEmployees)}
                     </div>
                 </div>
+            </div>
+            <div className="completed-jobs-section">
+                <Link to="/CompletedJobs" id="writeReviewBtn">
+                    See all completed jobs
+                </Link>
             </div>
             <div className="menu-section">
                 <h2 className="menu-header">Jobs</h2>

@@ -392,6 +392,12 @@ input[type="submit"]:hover {
   padding: 20px;
 }
 
+.completed-jobs-section {
+  background-image: url('../public/bg2.jpg');
+  text-align: center;
+  padding: 20px;
+}
+
 .menu-header {
   font-size: 2em;
   margin: 20px auto; 
