@@ -101,7 +101,6 @@ function Jobs() {
         <div className="Jobs">
             <div id="job-hero">
                 <p>Now Hiring! Delivery drivers needed. Please order a catering service and your name might be hired!</p>
-                <p>Our amazing employees and a list of jobs that are in the process of being completed.</p>
             </div>
             <div className="menu-section">
                 <h2 className="menu-header">Employees</h2>
