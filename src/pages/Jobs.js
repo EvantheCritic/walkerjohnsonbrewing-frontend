@@ -112,7 +112,7 @@ function Jobs() {
             </div>
             <div className="completed-jobs-section">
                 <Link to="/CompletedJobs" id="writeReviewBtn">
-                    See all completed jobs
+                    Recently completed jobs
                 </Link>
             </div>
             <div className="menu-section">

@@ -27,7 +27,6 @@ function Home() {
             <div id="home-hero">
                 <p>Come visit our restaurant and brewery for a yee-haw time!</p>
             </div>
-            <p className="alert">Note: Jobs page is not completed yet</p>
             <nav>
                 <Link to="/Beer" style={{ textDecoration: 'none' }}>
                 <div className="nav-pill">

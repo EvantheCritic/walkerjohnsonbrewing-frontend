@@ -122,7 +122,7 @@ header.App-header {
 }
 
 .logo-container {
-  background-image: url('../public/bg.jpg');
+  background-color: #fbd979;
   flex-grow: 1;
   position: relative;
   height: 190px; /* Set the height of the logo-container */
@@ -407,7 +407,7 @@ input[type="submit"]:hover {
 }
 
 .food-menu {
-  background-image: url('../public/bg2.jpg');
+  background-color: #fffbf9;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;

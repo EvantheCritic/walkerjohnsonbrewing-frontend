@@ -64,6 +64,62 @@ function Food() {
                             <p>Cheeseburger with jalapeños, pepper jack cheese, and chipotle mayo.</p>
                         </div>
                     </div>
+                    <div className="food-family">
+                        <h3>Sandwiches</h3>
+                        <div className="menu-food">
+                            <span>Walker Johnson Maple Chicken Sandwich:<p>$17</p></span>
+                            <p>Our signature chicken sandwich served with lettuce, tomato, onion, pickles, and our signature maple BBQ sauce.</p>
+                        </div>
+                        <div className="menu-food">
+                            <span>Nashville hot chicken sandwich:<p>$18</p></span>
+                            <p>Chicken sandwich made with our Dynamite sauce  served with lettuce, tomato, onion, and pickles.</p>
+                        </div>
+                        <div className="menu-food">
+                            <span>Philly Cheesesteak:<p>$20</p></span>
+                            <p>10 inch steak and chicken sandwich with choice of American, pepperjack, cheddar or swiss cheese. Served with peppers, onions, and mushrooms</p>
+                        </div>
+                        <div className="menu-food">
+                            <span>Pulled Pork Sandwich:<p>$22</p></span>
+                            <p>1/2 lb Barbecue pulled pork sandwich served with maple BBQ sauce, onion rings, and coleslaw.</p>
+                        </div>
+                        <div className="menu-food">
+                            <span>BLT Sandwich:<p>$15</p></span>
+                            <p>Sandwich with bacon, lettuce, tomato, and thousand island dressing.</p>
+                        </div>
+                        <div className="menu-food">
+                            <span>Walker Johnson Club Sandwich:<p>$17</p></span>
+                            <p>Sandwich with turkey, bacon, lettuce, tomato, and mayonnaise, served triple-decker style.</p>
+                        </div>
+                    </div>
+                    <div className="food-family">
+                        <h3>Barbecue</h3>
+                        <div className="menu-food">
+                            <span>Junior BBQ plate:<p>$16</p></span>
+                            <p>Choice of 1 meat, 1 side, and cornbread or roll.</p>
+                        </div>
+                        <div className="menu-food">
+                            <span>BBQ plate:<p>$20</p></span>
+                            <p>Choice of 2 meats, 2 sides, and cornbread or roll.</p>
+                        </div>
+                        <div className="menu-food">
+                            <span>Big BBQ plate:<p>$24</p></span>
+                            <p>Choice of 3 meats, 3 sides, and cornbread or roll.</p>
+                        </div>
+                        <h3>Meats</h3>
+                        <p><strong>Chicken</strong></p>
+                        <p><strong>Beef Ribs</strong></p>
+                        <p><strong>Beef Brisket</strong></p>
+                        <p><strong>Pork Ribs</strong></p>
+                        <p><strong>Pulled Pork</strong></p>
+                        <h3>Sides</h3>
+                        <p><strong>French Fries</strong></p>
+                        <p><strong>Cajun style beans</strong></p>
+                        <p><strong>Mashed Potatoes</strong></p>
+                        <p><strong>Mac N Cheese</strong></p>
+                        <p><strong>Brussels Sprouts</strong></p>
+                        <p><strong>Green Beans</strong></p>
+                        <p><strong>Horse Hey:</strong><br />1-inch long aldente spaghetti fried with cajun seasoning</p>
+                    </div>
                 </div>
             </div>
         </div>
