@@ -17,7 +17,7 @@ function Home() {
 
     //https://walkerjohnsonbrewing-server-fd63de77b2c7.herokuapp.com/
     useEffect(() => {
-        axios.get("https://walkerjohnsonbrewing-server-fd63de77b2c7.herokuapp.com/").then((result) => {
+        axios.get("http://localhost:2999/").then((result) => {
             console.log(result);
             setReviews(result.data);
         });

@@ -20,7 +20,7 @@ function CompletedJobs() {
     const [completedJobs, setCompletedJobs] = useState([]);
 
     useEffect(() => {
-        axios.get("https://walkerjohnsonbrewing-server-fd63de77b2c7.herokuapp.com/CompletedJobs").then((result) => {
+        axios.get("http://localhost:2999/CompletedJobs").then((result) => {
             console.log(result);
             setCompletedJobs(result.data);
         });

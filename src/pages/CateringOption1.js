@@ -22,7 +22,7 @@ function CateringOption1() {
     e.preventDefault();
     console.log("Option 1 Ordered");
     try {
-      const $axios = await axios.post("https://walkerjohnsonbrewing-server-fd63de77b2c7.herokuapp.com/Catering", option1);
+      const $axios = await axios.post("http://localhost:2999/Catering", option1);
       alert("Your Order has been placed!");
       window.location.href = '/';
       console.log('Sucessfully Ordered:', $axios.data);

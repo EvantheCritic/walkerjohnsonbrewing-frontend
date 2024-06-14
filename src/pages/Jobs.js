@@ -67,7 +67,7 @@ function Jobs() {
 
     useEffect(() => {
         console.log("One");
-        axios.get("https://walkerjohnsonbrewing-server-fd63de77b2c7.herokuapp.com/Jobs?table=catering1").then((result) => {
+        axios.get("http://localhost:2999/Jobs?table=catering1").then((result) => {
             console.log(result);
             setJobs1(result.data);
         });
@@ -75,7 +75,7 @@ function Jobs() {
 
     useEffect(() => {
         console.log("Two");
-        axios.get("https://walkerjohnsonbrewing-server-fd63de77b2c7.herokuapp.com/Jobs?table=catering2").then((result) => {
+        axios.get("http://localhost:2999/Jobs?table=catering2").then((result) => {
             console.log(result);
             setJobs2(result.data);
         });
@@ -83,7 +83,7 @@ function Jobs() {
 
     useEffect(() => {
         console.log("Three");
-        axios.get("https://walkerjohnsonbrewing-server-fd63de77b2c7.herokuapp.com/Jobs?table=catering3").then((result) => {
+        axios.get("http://localhost:2999/Jobs?table=catering3").then((result) => {
             console.log(result);
             setJobs3(result.data);
         });
@@ -91,7 +91,7 @@ function Jobs() {
 
     useEffect(() => {
         console.log("Four");
-        axios.get("https://walkerjohnsonbrewing-server-fd63de77b2c7.herokuapp.com/Jobs?table=employees").then((result) => {
+        axios.get("http://localhost:2999/Jobs?table=employees").then((result) => {
             console.log(result);
             setEmployees(result.data);
         });
